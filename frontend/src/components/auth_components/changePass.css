@@ -1,0 +1,86 @@
+/* Change password */
+#change_pass {
+    width: 100%;
+}
+
+#change_pass .change_pass_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#change_pass .change_pass_form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#change_pass .change_pass_form form .chng_pass_inp {
+    position: relative;
+}
+
+#change_pass .change_pass_form form .chng_pass_inp i {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+
+#change_pass .change_pass_form form input.change_pass_inp {
+    background: var(--input_bg);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 15px 20px;
+    min-width: 400px;
+    border-bottom: 2px solid var(--primary);
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+
+#change_pass .change_pass_form form input.change_pass_inp::placeholder {
+    font-size: 14px;
+    color: var(--input_placeholder);
+}
+
+#change_pass .change_pass_form form input.change_pass_inp:focus {
+    border-bottom: 2px solid var(--white);
+
+}
+
+#change_pass .change_pass_form form input.change_pass_submit {
+    background: var(--primary);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 15px 20px;
+    min-width: 400px;
+    color: var(--bg);
+    transition: all 0.3s ease-in;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#change_pass .change_pass_form form input.change_pass_submit:hover {
+    background: var(--white);
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+
+    /* change pass page */
+    #change_pass .change_pass_form form input.change_pass_inp {
+        min-width: 250px;
+    }
+
+    #change_pass .change_pass_form form input.change_pass_submit {
+        min-width: 250px;
+        font-size: 13px;
+    }
+}

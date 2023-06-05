@@ -1,0 +1,39 @@
+#not_found {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 25px;
+    flex-direction: column;
+}
+
+#not_found h1 {
+    text-align: center;
+}
+
+#not_found h1 span {
+    color: var(--primary);
+}
+
+#not_found a {
+    text-decoration: underline;
+    color: var(--white);
+    transition: all 0.3s ease-out;
+}
+
+#not_found a:hover {
+    color: var(--primary);
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    #not_found h1 {
+        font-size: 20px;
+    }
+
+    #not_found a {
+        font-size: 16px;
+    }
+}

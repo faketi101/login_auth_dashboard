@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahboard</title>
+    <link rel="stylesheet" href="./dashboard.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="dashboard">
+        <div id="top_bar">
+            <div class="greetings">
+                <div id="user_grettings"><span>Hello,</span> <br>
+                    <h1 class="user__name">Snowden</h1>
+                    <h1 class="menu_btn" onclick="visible_sidebar()" title="Open sidebar"><i
+                            class="fa-solid fa-table-list"></i></h1>
+                </div>
+            </div>
+            <div onclick="toggle_none()" id="user_options_ico" class="user_options">
+                <img class="user_icon"
+                    src="https://t3.ftcdn.net/jpg/05/17/79/88/360_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct.jpg"
+                    alt="user_icon" srcset="">
+                <div id="user_options_opt" class="options none">
+                    <a href="#">Logout</a>
+                    <a href="#">Change Password</a>
+                    <a href="#">Device Manager</a>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="dashboard_body">
+            <div id="sidebar">
+
+                <div class="siderbar_sections">
+                    <h1>admin options</h1>
+                    <a href="#" class="dashboard_option">
+                        <i class="fa-solid fa-user"></i> Dashboard
+                    </a>
+                    <a href="#" class="dashboard_option">
+                        Dashboardderer
+                    </a>
+                    <a href="#" class="dashboard_option">
+                        Dashboard
+                    </a>
+
+
+
+                    <a class="close__menu" onclick="hide_sidebar()" href="#">Close Menu</a>
+                </div>
+
+            </div>
+            <div id="dashboard_contents">
+                <div id="change_pass">
+                    <h1>Change Password</h1>
+                    <div class="change_pass_form">
+                        <form onsubmit="submitHandler(e)">
+                            <div class="chng_pass_inp">
+                                <input placeholder="Previous Password" type="password" class="change_pass_inp"
+                                    name="previous_password">
+
+                                <i title="Show Password" onclick="toggle_passview(this,'previous_password')"
+                                    class="fa-solid fa-eye show_pass"></i>
+
+                            </div>
+                            <div class="chng_pass_inp">
+                                <input placeholder="New Password" type="password" class="change_pass_inp"
+                                    name="new_password">
+
+                            </div>
+                            <div class="chng_pass_inp">
+                                <input placeholder="Confirm Password" type="password" class="change_pass_inp"
+                                    name="confirm_new_password">
+
+                            </div>
+                            <input type="submit" value="Submit" class="change_pass_submit">
+                        </form>
+                    </div>
+                </div>
+
+                <div id="device_manager">
+                    <h1>Device Manager</h1>
+                    <table>
+                        <thead>
+
+                            <th>#</th>
+                            <th>Login IP</th>
+                            <th>Address</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Last Login</th>
+                            <th>Actions</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>12.36.17</td>
+                                <td>Dhaka,Bangladesh</td>
+                                <td>Chrome</td>
+                                <td class="login_status">Logged In</td>
+                                <td>2023-16-23 at 9.14</td>
+                                <td class="actions"><button title="Log out from this device" class="log_out">Log Out</button> <button
+                                        class="delete" title="Delet this device">Delete</button> </td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>12.36.17</td>
+                                <td>Dhaka,Bangladesh</td>
+                                <td>Chrome</td>
+                                <td class="login_status">Logged out</td>
+                                <td>2023-16-23 at 9.14</td>
+                                <td class="actions"><button class="delete">Delete</button> </td>
+
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>12.36.17</td>
+                                <td>Dhaka,Bangladesh</td>
+                                <td>Chrome</td>
+                                <td class="login_status">Logged out</td>
+                                <td>2023-16-23 at 9.14</td>
+                                <td class="actions"><button class="delete">Delete</button> </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="./dashboard.js"></script>
+    </section>
+</body>
+
+</html>

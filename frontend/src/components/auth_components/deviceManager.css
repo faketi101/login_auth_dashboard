@@ -1,0 +1,72 @@
+/* Device Manager */
+#device_manager {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#device_manager table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+
+}
+
+#device_manager table thead {
+    background: var(--primary);
+    text-align: left;
+}
+
+#device_manager table thead th {
+    padding: 10px 5px;
+    color: var(--bg);
+    font-size: 14px;
+}
+
+#device_manager table tbody tr {
+    text-align: left;
+    background: var(--input_bg);
+    color: var(--input_placeholder);
+    font-size: 12px;
+    font-weight: lighter;
+
+}
+
+#device_manager table tbody tr td {
+    margin: 2px 0;
+    padding: 10px 5px;
+}
+#device_manager table tbody tr td.logged_in{
+    color: #0A9F07;
+}
+#device_manager table tbody tr td button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 3px 6px;
+    font-weight: bold;
+    color: var(--white);
+    margin: 0 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#device_manager table tbody tr td button.log_out {
+    background: #0A9F07;
+}
+
+#device_manager table tbody tr td button.delete {
+    background: #FC3206;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* device Manager */
+
+    #device_manager table thead th {
+        font-size: 12px;
+    }
+
+    #device_manager table tbody tr {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+#loading {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 15px;
+    flex-direction: column;
+    background: var(--bg);
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    #not_found h1 {
+        font-size: 15px;
+    }
+}

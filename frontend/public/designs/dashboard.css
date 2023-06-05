@@ -1,0 +1,379 @@
+:root {
+    --bg: #181823;
+    --primary: #537FE7;
+    --secondary: #C0EEF2;
+    --white: #E9F8F9;
+    --input_bg: #292933;
+    --input_placeholder: #B5B2B2
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    padding: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#dashboard {
+    width: 100%;
+    height: auto;
+}
+
+#dashboard #top_bar {
+    width: 100%;
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dashboard #top_bar {
+    min-height: 9vh;
+    max-height: 9vh;
+}
+
+#dashboard #top_bar .greetings {
+    width: 30%;
+
+}
+
+#dashboard #top_bar #user_grettings {
+    width: 100%;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#dashboard #top_bar #user_grettings h1 {
+    margin: 0;
+    text-align: center;
+    margin-top: -19px;
+}
+
+#dashboard #top_bar #user_grettings span {
+    font-size: 14px;
+    text-align: left;
+}
+
+#dashboard #top_bar .user_options {
+    padding-right: 25px;
+    cursor: pointer;
+    position: relative;
+
+
+}
+
+#dashboard #top_bar .user_options img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#dashboard #top_bar .user_options .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    min-width: 150px;
+    border: 1px solid var(--white);
+    padding: 3px;
+    background: var(--bg);
+    transition: all 0.3s ease;
+}
+
+#dashboard #top_bar .user_options .options a {
+    font-size: 12px;
+    color: var(--bg);
+    background: var(--primary);
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+#dashboard #top_bar .user_options .options a:hover {
+    background: var(--white);
+}
+
+
+#dashboard #dashboard_body {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#dashboard #dashboard_body #dashboard_contents {
+    width: 75%;
+    padding: 10px;
+    color: var(--white);
+}
+
+#dashboard #sidebar {
+    color: var(--white);
+    width: 25%;
+    min-height: 90vh;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-right: 2px solid var(--white);
+    padding: 0 5px;
+}
+
+#dashboard #sidebar .siderbar_sections {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-items: start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#dashboard #sidebar .siderbar_sections h1 {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+#dashboard #sidebar .siderbar_sections a {
+    font-size: 18px;
+    color: var(--bg);
+    background: var(--primary);
+    width: 90%;
+    text-align: left;
+    text-decoration: none;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+    padding: 5px;
+}
+
+#dashboard #sidebar .siderbar_sections a:hover {
+    background: var(--white);
+
+}
+
+.none {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.visible {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+#dashboard #top_bar #user_grettings h1.menu_btn {
+    display: none;
+}
+
+#dashboard #sidebar .siderbar_sections .close__menu {
+    display: none;
+    background: var(--secondary);
+}
+
+
+
+/* Change password */
+#change_pass {
+    width: 100%;
+}
+
+#change_pass .change_pass_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#change_pass .change_pass_form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#change_pass .change_pass_form form .chng_pass_inp {
+    position: relative;
+}
+
+#change_pass .change_pass_form form .chng_pass_inp i {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+
+#change_pass .change_pass_form form input.change_pass_inp {
+    background: var(--input_bg);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 15px 20px;
+    min-width: 400px;
+    border-bottom: 2px solid var(--primary);
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+
+#change_pass .change_pass_form form input.change_pass_inp::placeholder {
+    font-size: 14px;
+    color: var(--input_placeholder);
+}
+
+#change_pass .change_pass_form form input.change_pass_inp:focus {
+    border-bottom: 2px solid var(--white);
+
+}
+
+#change_pass .change_pass_form form input.change_pass_submit {
+    background: var(--primary);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 15px 20px;
+    min-width: 440px;
+    color: var(--bg);
+    transition: all 0.3s ease-in;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#change_pass .change_pass_form form input.change_pass_submit:hover {
+    background: var(--white);
+}
+
+
+/* Device Manager */
+#device_manager {
+    width: 100%;
+}
+
+#device_manager table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+#device_manager table thead {
+    background: var(--primary);
+    text-align: left;
+}
+
+#device_manager table thead th {
+    padding: 10px 5px;
+    color: var(--bg);
+    font-size: 14px;
+}
+
+#device_manager table tbody tr {
+    text-align: left;
+    background: var(--input_bg);
+    color: var(--input_placeholder);
+    font-size: 12px;
+    font-weight: lighter;
+
+}
+
+#device_manager table tbody tr td {
+    margin: 2px 0;
+    padding: 10px 5px;
+}
+
+#device_manager table tbody tr td button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 3px 6px;
+    font-weight: bold;
+    color: var(--white);
+    margin: 0 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#device_manager table tbody tr td button.log_out {
+    background: #0A9F07;
+}
+
+#device_manager table tbody tr td button.delete {
+    background: #FC3206;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    #dashboard #top_bar #user_grettings span {
+        font-size: 8px;
+        display: none;
+    }
+
+    #dashboard #top_bar #user_grettings h1.user__name {
+        font-size: 16px;
+        display: none;
+    }
+
+    #dashboard #sidebar .siderbar_sections a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #dashboard #top_bar #user_grettings h1 {
+        text-align: left;
+        margin-top: -27px;
+    }
+
+    #dashboard #sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        background: var(--bg);
+        display: none;
+        overflow-y: scroll;
+    }
+
+    #dashboard #top_bar #user_grettings h1.menu_btn {
+        display: block;
+    }
+
+    #dashboard #sidebar .siderbar_sections .close__menu {
+        display: block;
+    }
+
+    #dashboard #dashboard_body #dashboard_contents {
+        width: 100%;
+    }
+
+
+    /* change pass page */
+    #change_pass .change_pass_form form input.change_pass_inp {
+        min-width: 250px;
+    }
+
+    #change_pass .change_pass_form form input.change_pass_submit {
+        min-width: 290px;
+        font-size: 13px;
+    }
+
+    /* device Manager */
+
+    #device_manager table thead th {
+        font-size: 12px;
+    }
+
+    #device_manager table tbody tr {
+        font-size: 10px;
+    }
+}
