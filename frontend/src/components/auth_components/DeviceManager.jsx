@@ -89,10 +89,8 @@ const DeviceManager = () => {
                 `${d.logout_time !== "in" ? d.logout_time : d.login_time}`
               )
             )
-              .toUTCString()
+              .toLocaleString()
               .replaceAll("/", "-")}
-            <br />
-            {d.updated}
           </td>
           <td className="actions">
             {d.status === "expired" || d.status === "out" ? null : (
