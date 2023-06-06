@@ -163,6 +163,10 @@ body {
     opacity: 1 !important;
 }
 
+.active_nav {
+    background: var(--white) !important;
+}
+
 #dashboard #top_bar #user_grettings h1.menu_btn {
     display: none;
 }
