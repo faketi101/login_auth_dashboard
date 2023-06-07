@@ -130,6 +130,7 @@ const Login = () => {
                 <div className="div">
                   <h5>Username</h5>
                   <input
+                    autoComplete="off"
                     type="text"
                     name="username"
                     className="input"
