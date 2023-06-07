@@ -10,6 +10,7 @@ const Sidebar = () => {
         <div className="siderbar_sections">
           <h1>admin options</h1>
           <NavLink
+            onClick={() => hide_sidebar()}
             to="/dashboard"
             className={
               location.pathname === "/dashboard"
@@ -20,6 +21,7 @@ const Sidebar = () => {
             <i className="fa-solid fa-user" /> Dashboard
           </NavLink>
           <NavLink
+            onClick={() => hide_sidebar()}
             to="/dashboard/other"
             className={(nav) =>
               nav.isActive ? "active_nav dashboard_option" : "dashboard_option"
