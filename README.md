@@ -2,5 +2,6 @@
 
 ### 1. create a .env file in server folder
 ### 2. fill the env file with env_example file
-### 3. run the servers
-### 4. modify as you want..
+### 3. Create mongo model in database using Mongo Compass
+### 4. run the servers
+### 5. modify as you want..
