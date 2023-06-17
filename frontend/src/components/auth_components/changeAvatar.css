@@ -1,0 +1,53 @@
+#changePassword {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#changePassword img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#changePassword form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 5px;
+}
+#changePassword form input[type="text"] {
+    background: var(--input_bg);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 15px 20px;
+    min-width: 400px;
+    border-bottom: 2px solid var(--primary);
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+#changePassword form input[type="text"]:focus{
+    border-color: var(--white);
+}
+#changePassword form input[type="submit"] {
+    background: var(--primary);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 15px 20px;
+    min-width: 400px;
+    color: var(--bg);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    font-weight: bold;
+}
+#changePassword form input[type="submit"]:hover{
+    background: var(--white);
+}

@@ -353,6 +353,29 @@ const changePassword = async (req, res) => {
   }
 };
 
+// Change Avatar
+const changeAvatar = async (req, res) => {
+  try {
+    const { avatar } = req.body;
+    await User.updateOne(
+      {
+        $or: [
+          { username: req.loggedInUser.username },
+          { email: req.loggedInUser.email },
+        ],
+      },
+      { $set: { avatar: avatar } }
+    );
+    res
+      .status(201)
+      .json({ success: true, message: "Avatar has been changed." });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ success: false, message: "Server error! try again later." });
+  }
+};
+
 module.exports = {
   login,
   verifyPage,
@@ -360,4 +383,5 @@ module.exports = {
   getDevices,
   deviceUpdate,
   changePassword,
+  changeAvatar,
 };

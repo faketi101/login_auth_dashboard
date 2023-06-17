@@ -8,6 +8,7 @@ import Logout from "./components/auth_components/Logout";
 import Dash from "./components/dashboard_components/Dash";
 import DashboardMain from "./components/dashboard_pages/DashboardMain";
 import ChangePassword from "./components/auth_components/ChangePassword";
+import ChangeAvatar from "./components/auth_components/ChangeAvatar";
 import DeviceManager from "./components/auth_components/DeviceManager";
 import NotFound from "./components/pages/NotFound";
 import Loading from "./components/pages/Loading";
@@ -35,6 +36,7 @@ function App() {
           <Route path="/dashboard" element={<Dash />}>
             <Route path="" index element={<DashboardMain />} />
             <Route path="change_password" element={<ChangePassword />} />
+            <Route path="change_avatar" element={<ChangeAvatar />} />
             <Route path="device_manager" element={<DeviceManager />} />
           </Route>
           <Route path="/loading" element={<Loading />} />

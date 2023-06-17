@@ -9,6 +9,7 @@ const {
   getDevices,
   deviceUpdate,
   changePassword,
+  changeAvatar
 } = require("../controllers/loginController");
 const { userDetails } = require("../middlewares/userDetails");
 const verifyLogin = require("../middlewares/verifyLogin");
@@ -30,5 +31,8 @@ router.post("/devices/update", verifyLogin, deviceUpdate);
 
 // change password
 router.post("/change_password", verifyLogin, changePassword);
+
+// change password
+router.post("/change_avatar", verifyLogin, changeAvatar);
 
 module.exports = router;

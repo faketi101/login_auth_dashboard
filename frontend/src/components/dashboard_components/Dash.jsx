@@ -80,6 +80,7 @@ const Dash = () => {
             <div id="user_options_opt" className="options none">
               <Link to={"/logout"}>Logout</Link>
               <Link to={"/dashboard/change_password"}>Change Password</Link>
+              <Link to={"/dashboard/change_avatar"}>Change Avatar</Link>
               <Link to={"/dashboard/device_manager"}>Device Manager</Link>
             </div>
           </div>
